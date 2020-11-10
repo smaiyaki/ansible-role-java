@@ -8,6 +8,7 @@
     url: '{{ java_api_request }}'
     return_content: yes
   register: java_api_response
+  ignore_errors: yes
 
 - name: set major version var from API
   set_fact:
